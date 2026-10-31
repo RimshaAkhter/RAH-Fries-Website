@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crispy Spot</title>
+
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+
+<body class="bg-amber-50 text-stone-900 font-['Poppins']">
+
+  <!-- NAVBAR-->
+  <header class="fixed top-0 left-0 w-full z-50 bg-red-600 shadow-lg">
+
+   
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+
+      <!-- Logo -->
+      <a href="#home" class="font-['Lilita_One'] text-3xl text-yellow-300 tracking-wide">
+        🍟 Crispy Spot
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex items-center gap-8 text-white font-medium">
+        <li><a href="#home" class="hover:text-yellow-300 transition">Home</a></li>
+        <li><a href="#menu" class="hover:text-yellow-300 transition">Menu</a></li>
+        <li><a href="#why" class="hover:text-yellow-300 transition">Why Us</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="hidden md:inline-block px-5 py-2 rounded-full bg-yellow-400 text-stone-900 font-semibold hover:bg-yellow-300 transition">
+        Order Now
+      </a>
+
+     
+      <label for="menu-toggle" class="md:hidden text-yellow-300 text-3xl cursor-pointer">&#9776;</label>
+    </nav>
+
+    
+    <ul class="hidden peer-checked:flex md:peer-checked:hidden flex-col gap-4 px-6 pb-6 text-white font-medium bg-red-600">
+      <li><a href="#home" class="block py-1 hover:text-yellow-300">Home</a></li>
+      <li><a href="#menu" class="block py-1 hover:text-yellow-300">Menu</a></li>
+      <li><a href="#why" class="block py-1 hover:text-yellow-300">Why Us</a></li>
+      <li><a href="#contact" class="block py-1 hover:text-yellow-300">Contact</a></li>
+    </ul>
+  </header>
+
+  <!--  HERO -->
+  <section id="home" class="min-h-screen flex items-center pt-24 px-6 bg-gradient-to-br from-yellow-300 via-yellow-400 to-orange-400">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <p class="inline-block px-4 py-1 rounded-full bg-red-600 text-white text-sm font-medium mb-4">
+          🔥 Hot &amp; Fresh Every Day
+        </p>
+        <h1 class="font-['Lilita_One'] text-5xl md:text-7xl leading-tight text-stone-900">
+          Crispy Golden <span class="text-red-600">Fries</span> You'll Love!
+        </h1>
+        <p class="mt-6 text-stone-800 max-w-lg leading-relaxed">
+          Made from fresh potatoes, fried to perfection and served hot with your favourite dips.
+          One bite and you'll come back for more.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#menu" class="px-7 py-3 rounded-full bg-red-600 text-white font-semibold hover:bg-stone-900 transition">View Menu</a>
+          <a href="#contact" class="px-7 py-3 rounded-full border-2 border-stone-900 text-stone-900 font-semibold hover:bg-stone-900 hover:text-yellow-300 transition">Order Now</a>
+        </div>
+      </div>
+
+      
+      <div class="flex justify-center">
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-white/40 flex items-center justify-center text-9xl md:text-[10rem] shadow-2xl">
+          🍟
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  MENU -->
+  <section id="menu" class="py-24 px-6 bg-amber-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-['Lilita_One'] text-4xl md:text-5xl text-center">
+        Our <span class="text-red-600">Menu</span>
+      </h2>
+      <div class="w-20 h-1.5 bg-yellow-400 mx-auto mt-3 mb-12 rounded"></div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+          <div class="text-6xl mb-4">🍟</div>
+          <h3 class="font-['Lilita_One'] text-2xl mb-2">Classic Fries</h3>
+          <p class="text-sm text-stone-600 mb-4">Golden, crispy and lightly salted. Simple and perfect.</p>
+          <p class="text-2xl font-bold text-red-600">Rs. 250</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+          <div class="text-6xl mb-4">🧀</div>
+          <h3 class="font-['Lilita_One'] text-2xl mb-2">Cheesy Fries</h3>
+          <p class="text-sm text-stone-600 mb-4">Hot fries covered in melted creamy cheese.</p>
+          <p class="text-2xl font-bold text-red-600">Rs. 400</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+          <div class="text-6xl mb-4">🌶️</div>
+          <h3 class="font-['Lilita_One'] text-2xl mb-2">Spicy Masala Fries</h3>
+          <p class="text-sm text-stone-600 mb-4">Tossed in our special desi masala for a spicy kick.</p>
+          <p class="text-2xl font-bold text-red-600">Rs. 350</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+          <div class="text-6xl mb-4">🥗</div>
+          <h3 class="font-['Lilita_One'] text-2xl mb-2">Loaded Fries</h3>
+          <p class="text-sm text-stone-600 mb-4">Topped with cheese, chicken, and tangy sauces.</p>
+          <p class="text-2xl font-bold text-red-600">Rs. 550</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+          <div class="text-6xl mb-4">🥓</div>
+          <h3 class="font-['Lilita_One'] text-2xl mb-2">Curly Fries</h3>
+          <p class="text-sm text-stone-600 mb-4">Fun, twisty and extra crunchy in every bite.</p>
+          <p class="text-2xl font-bold text-red-600">Rs. 450</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+          <div class="text-6xl mb-4">🥤</div>
+          <h3 class="font-['Lilita_One'] text-2xl mb-2">Fries + Drink Combo</h3>
+          <p class="text-sm text-stone-600 mb-4">Classic fries with a cold drink. Best value deal.</p>
+          <p class="text-2xl font-bold text-red-600">Rs. 350</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--  WHY US -->
+  <section id="why" class="py-24 px-6 bg-stone-900 text-amber-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-['Lilita_One'] text-4xl md:text-5xl text-center">
+        Why <span class="text-yellow-400">Choose Us?</span>
+      </h2>
+      <div class="w-20 h-1.5 bg-red-600 mx-auto mt-3 mb-12 rounded"></div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-stone-800 rounded-3xl p-6 text-center border border-stone-700 hover:border-yellow-400 transition">
+          <div class="text-5xl mb-3">🥔</div>
+          <h3 class="font-['Lilita_One'] text-xl mb-2 text-yellow-400">Fresh Potatoes</h3>
+          <p class="text-sm text-amber-50/70">We use fresh potatoes every single day.</p>
+        </div>
+
+        <div class="bg-stone-800 rounded-3xl p-6 text-center border border-stone-700 hover:border-yellow-400 transition">
+          <div class="text-5xl mb-3">⚡</div>
+          <h3 class="font-['Lilita_One'] text-xl mb-2 text-yellow-400">Fast Delivery</h3>
+          <p class="text-sm text-amber-50/70">Hot fries at your door in minutes.</p>
+        </div>
+
+        <div class="bg-stone-800 rounded-3xl p-6 text-center border border-stone-700 hover:border-yellow-400 transition">
+          <div class="text-5xl mb-3">💰</div>
+          <h3 class="font-['Lilita_One'] text-xl mb-2 text-yellow-400">Pocket Friendly</h3>
+          <p class="text-sm text-amber-50/70">Tasty food at prices everyone can enjoy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  CONTACT  -->
+  <section id="contact" class="py-24 px-6 bg-gradient-to-br from-yellow-300 to-orange-400">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="font-['Lilita_One'] text-4xl md:text-5xl text-center">
+        Order <span class="text-red-600">Now</span>
+      </h2>
+      <div class="w-20 h-1.5 bg-red-600 mx-auto mt-3 mb-12 rounded"></div>
+
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <!-- Info -->
+        <div class="space-y-4 text-stone-900">
+          <p class="font-medium">Hungry? Send us your order and we'll deliver it hot and fresh!</p>
+          <p>📞 <span class="font-semibold">0300-0000000</span></p>
+          <p>📧 <span class="font-semibold">hello@crispyspot.com</span></p>
+          <p>🔷 Karachi, Pakistan</p>
+          <p>🕒 Open daily: 12 PM - 12 AM</p>
+        </div>
+
+        <!-- Order form -->
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" required
+                 class="w-full px-4 py-3 rounded-xl bg-white border-2 border-transparent focus:border-red-600 outline-none" />
+          <input type="tel" placeholder="Phone Number" required
+                 class="w-full px-4 py-3 rounded-xl bg-white border-2 border-transparent focus:border-red-600 outline-none" />
+          <select class="w-full px-4 py-3 rounded-xl bg-white border-2 border-transparent focus:border-red-600 outline-none">
+            <option>Classic Fries</option>
+            <option>Cheesy Fries</option>
+            <option>Spicy Masala Fries</option>
+            <option>Loaded Fries</option>
+            <option>Curly Fries</option>
+            <option>Fries + Drink Combo</option>
+          </select>
+          <textarea rows="3" placeholder="Address / Special Request"
+                    class="w-full px-4 py-3 rounded-xl bg-white border-2 border-transparent focus:border-red-600 outline-none"></textarea>
+          <button type="submit" class="w-full py-3 rounded-xl bg-red-600 text-white font-semibold hover:bg-stone-900 transition">
+            Place Order 🍟
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--  FOOTER  -->
+  <footer class="py-6 text-center text-sm bg-red-600 text-white">
+    <span class="font-['Lilita_One'] text-yellow-300 text-lg">🍟 Crispy Spot</span>
+    &copy; 2026 All rights reserved.
+  </footer>
+
+</body>
+</html>
